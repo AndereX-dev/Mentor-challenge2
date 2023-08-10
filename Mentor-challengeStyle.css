@@ -1,0 +1,110 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 80%);
+    font-size: 14px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+}
+
+.container {
+    margin: 30px 0;
+    padding: 0 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    /*grid-template-colums: 1fr 1fr;*/
+    grid-template-areas: "header header";
+    max-width: 700px;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #fff;
+}
+/*##############The top part of the card##################*/
+.card-content1 {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 100px;
+    grid-area: header;
+    justify-content: space-around;
+    padding: 30px;
+    border: none;
+    box-shadow: black;
+}
+
+.card-title {
+    color: hsl(179, 62%, 43%);
+    margin-top: 10px;
+}
+
+.sub-title {
+    padding-bottom: 30px;
+    color: hsl(71, 73%, 54%);
+}
+
+.description {
+    color: hsl(204, 43%, 80%);
+    line-height: 2;
+}
+/*####################################################*/
+
+/*####################The bottom part of the card#############*/
+.card-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    border: none;
+    background-color: hsl(179, 62%, 43%);
+    color: #fff;
+}
+
+.price {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+    font-size: 24px;
+}
+
+.note {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    padding-left: 10px;
+    font-size: 14px;
+    color: hsl(204, 43%, 80%);
+}
+
+.sign-up-btn {
+    padding: 10px 20px;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px black;
+}
+
+.card-content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    border: none;
+    background-color: hsl(179, 62%, 50%);
+    color: #fff;
+}
+
+.info {
+    color: hsl(204, 43%, 93%);
+    margin: 15px;
+    list-style-type: none;
+}
